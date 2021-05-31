@@ -16,9 +16,4 @@ public class DepartmentServiceApplication {
 		SpringApplication.run(DepartmentServiceApplication.class, args);
 	}
 
-	@Bean
-	public RestTemplate restTemplate() {
-		log.info("Initializing the rest template bean for micro-service");
-		return new RestTemplate();
-	}
 }
